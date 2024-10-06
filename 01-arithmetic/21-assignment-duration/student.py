@@ -1,15 +1,15 @@
 # write your code here
-def hour(durataion):
-    h=(3600)
-    return (durataion//h)
+def hours(duration):
+    h=(duration)//3600
+    return (h)
 
 def minutes(duration):
-    h=(hour(duration))
-    m=  (duration)-(3600*h)
+    x=hours(duration)*3600
+    m= (duration)-(x)
     return  (m//60)
 
-def second(duration):
-   h=(hour(duration))
-   m=(duration)-(h*3600)
-   s=(duration)-(m*60)
-   return s
+def seconds(duration):
+   x=hours(duration)*3600
+   y=minutes(duration)*60
+   s=(duration)-(x+y)
+   return (s)
